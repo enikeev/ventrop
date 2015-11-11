@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>ОПР</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link href="css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header class="header clearfix">
+		<div class="header-bg"></div>
+		<div class="inner">
+			<div class="header-top">
+				<div class="header-logo"></div>
+				<ul class="header-nav">
+					<li class="header-nav__item"><a href="#">О компании</a></li>
+					<li class="header-nav__item"><a href="#">Услуги</a></li>
+					<li class="header-nav__item"><a href="#">Объекты</a></li>
+					<li class="header-nav__item"><a href="#">Бренды</a></li>
+					<li class="header-nav__item"><a href="#">Партнеры</a></li>
+					<li class="header-nav__item"><a href="#">Контакты</a></li>
+					<li class="header-nav__item"><span class="phone"><i>+7 (812)</i> 645-90-50</span></li>
+				</ul>
+			</div>
+			<div class="title">КОНТАКТЫ</div>
+		</div>
+	</header><!-- .header-->
+
+	<section class="contact">
+		<div class="inner clearfix">
+			<div class="main">
+				<div class="title">САНКТ-ПЕТЕРБУРГ<br>197110</div>
+				<div class="text">Петровский проспект, дом 9<br>Тел : +7 (812) 645 90 50<br>Тел2 :+7 (911) 086 81 97<br><a href="mailto:order@ventorp.ru">order@ventorp.ru</a><br>GPS : 51.3564877-6.8544261</div>
+			</div>
+			<div class="all">
+				<div class="item">
+					<div class="item-img"><img src="img/ico/ico-armcheir.png" alt=""></div>
+					<div class="item-text">Генеральный директор<br>Орлов Евгений Анатольевич</div>
+					<div class="item-mail"><a href="mailto:orlov@ventorp.ru">orlov@ventorp.ru</a></div>
+				</div>
+				<div class="item">
+					<div class="item-img"><img src="img/ico/ico-safe.png" alt=""></div>
+					<div class="item-text">Коммерческий директор<br>Палагин Сергей Евгеньевич</div>
+					<div class="item-mail"><a href="mailto:Palagin@ventorp.ru">Palagin@ventorp.ru</a></div>
+				</div>
+				<div class="item">
+					<div class="item-img"><img src="img/ico/ico-engineer.png" alt=""></div>
+					<div class="item-text">Инженерный отдел<br>Семитуркин Андрей Викторович</div>
+					<div class="item-mail"><a href="mailto:Semiturkin@ventorp.ru">Semiturkin@ventorp.ru</a></div>
+				</div>
+				<div class="item">
+					<div class="item-img"><img src="img/ico/ico-folder.png" alt=""></div>
+					<div class="item-text">Проектный отдел<br>Оничкина Лидия Евгеньевна</div>
+					<div class="item-mail"><a href="mailto:Onichkina@ventorp.ru">Onichkina@ventorp.ru</a></div>
+				</div>
+				<div class="item">
+					<div class="item-img"><img src="img/ico/ico-money.png" alt=""></div>
+					<div class="item-text">Отдел бухгалтерии<br>Антонова Марина Александровна</div>
+					<div class="item-mail"><a href="mailto:Antonova@ventorp.ru">Antonova@ventorp.ru</a></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contacts">
+		<div class="contacts-map" id="myMap">
+			<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1679.4775791099487!2d30.26199154740421!3d59.96121965660636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469636ca2e5b4cc7%3A0xba25ff1a7e5a05f3!2z0J_QtdGC0YDQvtCy0YHQutC40Lkg0L_RgC4sIDksINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTcxMTA!5e0!3m2!1sru!2sru!4v1446664950083" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+		</div>
+		<script>
+			var map;
+			function initMap() {
+
+				var coord = {lat: 59.9615, lng: 30.2625};
+
+				var map = new google.maps.Map(document.getElementById('myMap'), {
+					center: coord,
+					scrollwheel: false,
+					disableDefaultUI: true,
+					zoom: 16
+				});
+
+				var marker = new google.maps.Marker({
+					map: map,
+					title: 'Авпывапыва!',
+					position: coord
+				});
+			}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+	</section>
+
+	<footer class="footer">
+		<div class="inner">
+			<div class="footer-item footer-logo"></div>
+			<div class="footer-item footer-address">Фактический адрес : 197110, Россия,<br>Санкт-Петербург, Петровский пр., д.9</div>
+			<div class="footer-item footer-phone"><span><i>+7 (812)</i> 645-90-50</span></div>
+			<div class="footer-item footer-phone"><span><i>+7 (911)</i> 086-81-97</span></div>
+			<div class="footer-item footer-slash"></div>
+			<div class="footer-item footer-copy">© 2015 ООО «Вентиляция ОРП»<br>Условия использования ресурса<br>Политика конфидециальности</div>
+		</div>
+	</footer><!-- .footer -->
+
+</div><!-- .wrapper -->
+
+
+</body>
+</html>
